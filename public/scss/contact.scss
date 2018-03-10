@@ -1,0 +1,71 @@
+* {
+  font-family: Spoqa Han Sans,Spoqa Han Sans JP,Noto Sans Korean,sans-serif,arial,Microsoft JhengHei,'微軟正黑體';
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}
+hr {
+  width: 25vw;
+  border: solid #d6b161;
+  border-width: .25rem 0 0 0; 
+}
+form {
+  margin-top: 1rem;
+}
+input[type="text"], textarea {
+  width: 100%;
+  margin-top: .4rem;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+input[type="text"] {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+input[type="submit"] {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  left: 50%;
+  margin-top: 1rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transform: translate(-50%);
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #222;
+  transition: background-color .3s, color .3s;
+  &:hover {
+    background-color: #222;
+    color: #d6b161;
+  }
+}
+textarea {
+  resize: none;
+}
+label {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.card {
+  width: 95%;
+  max-width: 450px;
+  margin: 3rem auto 0 auto;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+.errorMsg {
+  padding: 2px 5px;
+  color: #d9534f;
+  border: 1px #d9534f solid;
+  border-radius: 5px;
+  font-size: 1rem;
+}

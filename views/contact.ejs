@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    傳送表單內容
+  </title>
+  <link rel="stylesheet" href="/css/contact.css"/>
+  <link rel="stylesheet" href="/css/fontello.css"/>
+</head>
+<body>
+  <div class="card">
+    <h1>放話給 Greene</h1>
+    <hr>
+    <form action="/contact/post" method="post">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <div>
+        <label for="username">姓名<i class="icon-user" style="color:#428bca;"></i>  <%- nameError %></label>
+        <br />
+        <input type="text" name="username" id="username"/>
+      </div>
+      <div>
+        <label for="email">信箱<i class="icon-mail-alt" style="color:#c1272d;"></i> <%- emailError %></label>
+        <br />
+        <input type="text" name="email" id="email"/>
+      </div>
+      <div>
+        <label for="title">標題<i class="icon-title" style="color:#5cb85c;"></i> <%- titleError %></label>
+        <br />
+        <input type="text" name="title" id="title"/>
+      </div>
+      <div>
+        <label for="description">想說的話<i class="icon-message" style="color:#ff9900;"></i></label>
+        <textarea name="description" id="description" cols="30" rows="6"></textarea>
+      </div>
+      <div>
+          <input type="submit" value="送出訊息" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

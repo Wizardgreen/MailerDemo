@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>管理頁面</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="card">
+    <h1>訊息管理頁面</h1>
+    <div class="table">
+      <div class="row header">
+        <p class="t-num">#</p>
+        <p class="t-title">標題</p>
+        <p class="t-name">名稱</p>
+        <p class="t-email">信箱</p>
+        <p class="t-btn">內容</p>
+        <p class="t-btn">刪除</p>
+      </div>
+      <hr class="main" />
+      <%- mails%>
+    </div>
+  </div>
+  <input id="token" type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <script src="/js/main.js"></script>
+</body>
+</html>

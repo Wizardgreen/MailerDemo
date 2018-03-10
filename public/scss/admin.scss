@@ -1,0 +1,77 @@
+* {
+  font-family: Spoqa Han Sans,Spoqa Han Sans JP,Noto Sans Korean,sans-serif,arial,Microsoft JhengHei,'微軟正黑體';
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;;
+}
+h1, p {
+  color: #222;
+}
+h1 {
+  text-align: center;
+}
+p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+hr {
+  width: 100%;
+  border-style: solid;
+  &.main {
+    border-color: #d6b161;
+    border-width: .2rem 0 0 0;
+  }
+  &.sub {
+    border-color: #ccc;
+    border-width: .12rem 0 0 0;
+  }
+}
+.card {
+  width: 95%;
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+.btn {
+  width: 60px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  background-color: transparent;
+  transition: all .3s;
+  &.btn-check {
+    border-color: #222;
+    color: #222;
+    &:hover {
+      background-color: #222;
+      color: #d6b161
+    }
+  }
+  &.btn-del {
+    border-color: #d9534f;
+    color: #d9534f;
+    &:hover {
+      background-color: #d9534f;
+      color: #eee;
+    }
+  }
+}
+.row {
+  display: flex;
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    letter-spacing: 1px;
+    &.t-num, &.t-name, &.t-btn {
+      flex: .5;
+    }
+  }
+  &.header {
+    font-weight: bold;
+  }
+}
