@@ -104,7 +104,12 @@ router.get('/admin', csrfProtection, (req, res) => {
           <p class="t-name">${snapshot.val()[item].username}</p>
           <p class="t-email">${snapshot.val()[item].email}</p>
           <p class="t-btn">
-            <button data-des="${snapshot.val()[item].des}" class="btn btn-check">查看</button>
+            <button
+              data-title="${snapshot.val()[item].title}"
+              data-des="${snapshot.val()[item].des}"
+              data-name="${snapshot.val()[item].username}"
+              class="btn btn-check">查看
+            </button>
           </p>
           <p class="t-btn">
             <button data-id="${item}" class="btn btn-del">刪除</button>
@@ -123,7 +128,7 @@ router.get('/admin', csrfProtection, (req, res) => {
 router.post('/admin/del', csrfProtection, (req, res) => {
   let id = req.body.id;
   FBD.child(id).remove().then(() => {
-    res.redirect('/contact/admin');
+    res.redirect('/contact/admin')
   });
 });
 

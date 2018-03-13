@@ -10,6 +10,7 @@
 <body>
   <div class="card">
     <h1>訊息管理頁面</h1>
+    <a href="/contact" class="btn goback">Back</a>
     <div class="table">
       <div class="row header">
         <p class="t-num">#</p>
@@ -23,6 +24,15 @@
       <%- mails%>
     </div>
   </div>
+  <div class="board">
+    <div class="content">
+      <h3 class="title"></h2>
+      <h3 class="name"></h3>
+      <p class="des"></p>
+      <button class="btn btn-close">X</button>
+    </div>
+  </div>
+
   <input id="token" type="hidden" name="_csrf" value="<%= csrfToken %>">
   <script src="/js/main.js"></script>
 </body>

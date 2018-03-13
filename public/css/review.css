@@ -46,56 +46,22 @@ p {
   border-radius: 10px;
   background-color: #ededed; }
 
+body {
+  background-image: url("../img/thatCat.jpg");
+  background-size: 85%;
+  background-position: -150% 0;
+  background-repeat: no-repeat; }
+
 hr {
   width: 25vw;
   border: solid #d6b161;
   border-width: .25rem 0 0 0; }
 
-form {
-  margin-top: 1rem; }
-
-input[type="text"], textarea {
-  width: 100%;
-  margin-top: .4rem;
-  padding: 3px 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem; }
-
-input[type="text"] {
-  height: 2rem;
-  margin-bottom: 1rem; }
-
-input[type="submit"] {
-  position: relative;
-  width: 100px;
-  height: 40px;
-  left: 50%;
-  margin-top: 1rem;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%); }
-
-textarea {
-  resize: none; }
-
-label {
-  font-size: 1.2rem;
-  letter-spacing: 2px; }
+.card {
+  text-align: center;
+  opacity: .9; }
 
 .btn {
-  position: absolute;
-  right: 1.2rem;
-  width: 60px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none; }
-
-.errorMsg {
-  padding: 2px 5px;
-  color: #d9534f;
-  border: 1px #d9534f solid;
-  border-radius: 5px;
-  font-size: 1rem; }
+  display: inline-block;
+  width: 100px;
+  margin: 1rem; }

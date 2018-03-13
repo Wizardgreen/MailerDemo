@@ -1,0 +1,21 @@
+@import "main";
+body {
+  background-image: url('../img/thatCat.jpg');
+  background-size:  85% ;
+  background-position: -150% 0;
+  background-repeat: no-repeat;
+}
+hr {
+  width: 25vw;
+  border: solid #d6b161;
+  border-width: .25rem 0 0 0; 
+}
+.card {
+  text-align: center;
+  opacity: .9;
+}
+.btn {
+  display: inline-block;
+  width: 100px;
+  margin: 1rem;
+}

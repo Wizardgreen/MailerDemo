@@ -12,7 +12,8 @@
 </head>
 <body>
   <div class="card">
-    <h1>放話給 Greene   <a href="/contact/admin">管理頁連結(暫時)</a></h1>
+    <a class="btn" href="/contact/admin">Admin</a>
+    <h1>放話給 Greene</h1>
     <hr>
     <form action="/contact/post" method="post">
       <input type="hidden" name="_csrf" value="<%= csrfToken %>">
@@ -36,7 +37,7 @@
         <textarea name="description" id="description" cols="30" rows="6"></textarea>
       </div>
       <div>
-          <input type="submit" value="送出訊息" />
+          <input  class="btn" type="submit" value="送出訊息" />
       </div>
     </form>
   </div>

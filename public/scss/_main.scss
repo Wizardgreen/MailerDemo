@@ -1,0 +1,46 @@
+* {
+  font-family: Spoqa Han Sans,Spoqa Han Sans JP,Noto Sans Korean,sans-serif,arial,Microsoft JhengHei,'微軟正黑體';
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+}
+h1, p {
+  color: #222;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  background-color: transparent;
+  transition: all .3s;
+  border-color: #222;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    background-color: #222;
+    color: #d6b161
+  }
+}
+.card {
+  position: relative;
+  width: 95%;
+  max-width: 450px;
+  margin: 3rem auto 0 auto;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #ededed;
+}

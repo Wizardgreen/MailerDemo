@@ -1,14 +1,4 @@
-* {
-  font-family: Spoqa Han Sans,Spoqa Han Sans JP,Noto Sans Korean,sans-serif,arial,Microsoft JhengHei,'微軟正黑體';
-  box-sizing: border-box;
-}
-body {
-  background-color: #121212;
-}
-h1 {
-  margin: 0;
-  text-align: center;
-}
+@import "main";
 hr {
   width: 25vw;
   border: solid #d6b161;
@@ -38,14 +28,6 @@ input[type="submit"] {
   border-radius: 30px;
   font-size: 1.1rem;
   transform: translate(-50%);
-  background-color: transparent;
-  color: #222;
-  border: 1px solid #222;
-  transition: background-color .3s, color .3s;
-  &:hover {
-    background-color: #222;
-    color: #d6b161;
-  }
 }
 textarea {
   resize: none;
@@ -54,13 +36,13 @@ label {
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
-.card {
-  width: 95%;
-  max-width: 450px;
-  margin: 3rem auto 0 auto;
-  padding: 1.2rem;
-  border-radius: 10px;
-  background-color: #ededed;
+.btn {
+  position: absolute;
+  right: 1.2rem;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
 }
 .errorMsg {
   padding: 2px 5px;
