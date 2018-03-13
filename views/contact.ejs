@@ -13,17 +13,17 @@
 <body>
   <div class="card">
     <a class="btn goAdmin" href="/contact/admin">Admin</a>
-    <h1>放話給 Greene</h1>
+    <h1>Greene's Letter</h1>
     <hr>
     <form action="/contact/post" method="post">
       <input type="hidden" name="_csrf" value="<%= csrfToken %>">
       <div>
-        <label for="username">姓名<i class="icon-user" style="color:#428bca;"></i>  <%- nameError %></label>
+        <label for="username">你的稱呼<i class="icon-user" style="color:#428bca;"></i>  <%- nameError %></label>
         <br />
         <input type="text" name="username" id="username"/>
       </div>
       <div>
-        <label for="email">信箱<i class="icon-mail-alt" style="color:#c1272d;"></i> <%- emailError %></label>
+        <label for="email">對方信箱<i class="icon-mail-alt" style="color:#c1272d;"></i> <%- emailError %></label>
         <br />
         <input type="text" name="email" id="email"/>
       </div>

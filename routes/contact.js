@@ -64,7 +64,7 @@ router.post('/post', csrfProtection, body('email').isEmail().withMessage('請輸
   }); 
   let mailOptions = {
     form: 'Greene <t0937383@gmail.com>',
-    to: 't0937383@gmail.com',
+    to: req.body.email,
     subject: `${req.body.username} 寄了一封信給你`,
     text: req.body.description
   };
