@@ -85,13 +85,11 @@ label {
   font-size: 1.2rem;
   letter-spacing: 2px; }
 
-.btn {
+.goAdmin {
   position: absolute;
   right: 1.2rem;
   width: 60px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none; }
+  height: 30px; }
 
 .errorMsg {
   padding: 2px 5px;
@@ -99,3 +97,8 @@ label {
   border: 1px #d9534f solid;
   border-radius: 5px;
   font-size: 1rem; }
+
+@media (max-width: 400px) {
+  .goAdmin {
+    top: .3rem;
+    right: .3rem; } }
