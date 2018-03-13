@@ -128,7 +128,7 @@ router.get('/admin', csrfProtection, (req, res) => {
 router.post('/admin/del', csrfProtection, (req, res) => {
   let id = req.body.id;
   FBD.child(id).remove().then(() => {
-    res.redirect('/contact/admin')
+    res.end();
   });
 });
 
